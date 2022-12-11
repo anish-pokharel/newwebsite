@@ -18,7 +18,11 @@ const HeroSection = () => {
         </div>
         <div className="section-hero-image">
           <picture>
-            <img src="./images/hero.svg" alt="" />
+            <img
+              src="./images/hero.svg"
+              alt="hero image"
+              className="hero-img "
+            />
           </picture>
         </div>
       </div>
