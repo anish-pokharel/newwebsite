@@ -4,7 +4,14 @@ import styled from "styled-components";
 const HeroSection = () => {
   return (
     <Wrapper>
-      <h1>hell</h1>
+      <div className="container grid grid-two-column">
+        <div className="section-hero-data">
+          <p className="hero-top-data">This is me</p>
+          <h1 className="hero-hading">ANIsh</h1>
+          <p className="hero-para">i m anish pokharel</p>
+          <button className="btn hire-me-btn">Hireme</button>
+        </div>
+      </div>
     </Wrapper>
   );
 };
