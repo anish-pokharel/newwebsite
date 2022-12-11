@@ -11,6 +11,11 @@ const HeroSection = () => {
           <p className="hero-para">i m anish pokharel</p>
           <button className="btn hire-me-btn">Hireme</button>
         </div>
+        <div className="section-hero-image">
+          <picture>
+            <img src="" alt="" />
+          </picture>
+        </div>
       </div>
     </Wrapper>
   );
