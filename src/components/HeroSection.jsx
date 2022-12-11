@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { Button } from "../styles/Button";
 
 const HeroSection = () => {
   return (
@@ -10,10 +11,10 @@ const HeroSection = () => {
           <p className="hero-top-data">This is me</p>
           <h1 className="hero-hading">ANIsh POKHAREL</h1>
           <p className="hero-para">i m anish pokharel</p>
-          <button className="btn hire-me-btn">
+          <Button className="btn hire-me-btn">
             <NavLink to="/contact" />
             Hireme
-          </button>
+          </Button>
         </div>
         <div className="section-hero-image">
           <picture>
