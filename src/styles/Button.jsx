@@ -20,4 +20,10 @@ export const Button = styled.button`
     box-shadow: ${({ theme }) => theme.colors.shadowSupport};
     transform: scale(0.96);
   }
+
+  a {
+    text-decoration: none;
+    color: rgb(255 255 255);
+    font-size: 1.8rem;
+  }
 `;
