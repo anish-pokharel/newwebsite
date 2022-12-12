@@ -18,11 +18,7 @@ const HeroSection = (props) => {
         </div>
         <div className="section-hero-image">
           <picture>
-            <img
-              src="./images/hero.svg"
-              alt="hero image"
-              className="hero-img "
-            />
+            <img src={props.image} alt="hero image" className="hero-img " />
           </picture>
         </div>
       </div>
