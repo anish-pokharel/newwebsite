@@ -5,4 +5,9 @@
 import { Children } from "react";
 
 const AppContext = React.createContext();
-const AppProvider=({children}})
+const AppProvider = ({ children }) => {
+  return(
+
+      <AppContext.Provider>{children}</AppContext.Provider>;
+      )
+};
