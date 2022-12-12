@@ -3,7 +3,7 @@ import HeroSection from "./components/HeroSection";
 
 const About = () => {
   const data = {
-    name: "karthik",
+    name: "karthik Pokharel",
     image: "./images/about1.svg",
   };
   return (
