@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="container grid grid-two-column">
         <div className="section-hero-data">
           <p className="hero-top-data">This is me</p>
-          <h1 className="hero-heading">ANIsh d POKHAREL</h1>
+          <h1 className="hero-heading">ANIsh POKHAREL</h1>
           <p className="hero-para">i m anish pokharel</p>
           <Button className="btn hire-me-btn">
             <NavLink to="/contact" />
@@ -40,6 +40,7 @@ const Wrapper = styled.section`
   .btn {
     max-width: 16rem;
   }
+
   .hero-top-data {
     text-transform: uppercase;
     font-weight: 500;
