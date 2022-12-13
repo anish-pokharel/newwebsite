@@ -1,6 +1,7 @@
 // create a context
 // Provider
 // consumer /usecontext hook
+// custom hooks complete/
 import React, { useContext } from "react";
 
 import { Children } from "react";
@@ -16,3 +17,6 @@ const useGlobalContext = () => {
 };
 
 export { AppContext, AppProvider, useGlobalContext };
+
+
+break 
