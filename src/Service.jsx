@@ -2,9 +2,9 @@ import React from "react";
 
 const Service = () => {
   return (
-    <>
-      <div>service</div>
-    </>
+    <wrapper>
+      <h2 className="common-heading"> Our Services </h2>
+    </wrapper>
   );
 };
 
