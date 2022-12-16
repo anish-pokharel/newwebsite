@@ -2,14 +2,16 @@
 // Provider
 // consumer /usecontext hook
 // custom hooks complete/
-import React, { useContext, useReducer } from "react";
+import React, { useContext, useReducer, useEffect } from "react";
 import reducer from "../src/reducer";
 import { Children } from "react";
 
 const AppContext = React.createContext();
+const API = "https://thapareactapi.up.railway.app/";
 const initialState = {
   name: " ",
   image: " ",
+  services: [],
 };
 
 const AppProvider = ({ children }) => {
@@ -32,8 +34,20 @@ const AppProvider = ({ children }) => {
       },
     });
   };
-
+  // to get api data
+  const getService = async (url) => {
+    try {
+      const res = await fetch(url);
+      const data = await res.json();
+      dispatch({ type: "GET_SERVICES", payload: data });
+    } catch (error) {
+      console.log(error);
+    }
+  };
   // to call api
+  useEffect(() => {
+    getService(API);
+  }, []);
 
   return (
     <AppContext.Provider value={{ ...state, updateHomePage, updateAboutPage }}>
