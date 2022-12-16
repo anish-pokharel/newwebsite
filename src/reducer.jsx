@@ -14,7 +14,7 @@ const reducer = (state, action) => {
       image: action.payload.image,
     };
   }
-  // if (action.type === "GET_SERVICES") {
+  //  if (action.type === "GET_SERVICES") {
   //   return {
   //     ...state,
   //     service: action.payload,
