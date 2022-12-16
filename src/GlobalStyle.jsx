@@ -56,6 +56,9 @@ export const GlobalStyle = createGlobalStyle`
   .grid-two-column {
     grid-template-columns: repeat(2, 1fr);
   }
+  .grid-three-column {
+    grid-template-columns: repeat(3, 1fr);
+  }
   
 
   
