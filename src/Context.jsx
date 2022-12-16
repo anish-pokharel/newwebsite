@@ -33,6 +33,8 @@ const AppProvider = ({ children }) => {
     });
   };
 
+  // to call api
+
   return (
     <AppContext.Provider value={{ ...state, updateHomePage, updateAboutPage }}>
       {children}
