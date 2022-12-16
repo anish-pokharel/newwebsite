@@ -2,13 +2,42 @@
 // Provider
 // consumer /usecontext hook
 // custom hooks complete/
-import React, { useContext } from "react";
-
+import React, { useContext, useReducer } from "react";
+import reducer from "../src/reducer";
 import { Children } from "react";
 
 const AppContext = React.createContext();
+const initialState = {
+  name: " ",
+  image: " ",
+};
+
 const AppProvider = ({ children }) => {
-  return <AppContext.Provider value="anish">{children}</AppContext.Provider>;
+  const [state, dispatch] = useReducer(reducer, initialState);
+  const updateHomePage = () => {
+    return dispatch({
+      type: "Home_Update",
+      payload: {
+        name: "Anish Pokharel",
+        image: "./images/hero.svg",
+      },
+    });
+  };
+  const updateAboutPage = () => {
+    return dispatch({
+      type: "About_Update",
+      payload: {
+        name: "Karthik Pokharel",
+        image: "./images/about1.svg",
+      },
+    });
+  };
+
+  return (
+    <AppContext.Provider value={{ ...state, updateHomePage, updateAboutPage }}>
+      {children}
+    </AppContext.Provider>
+  );
 };
 
 // GLOBALHOOKS
@@ -17,6 +46,3 @@ const useGlobalContext = () => {
 };
 
 export { AppContext, AppProvider, useGlobalContext };
-
-
-break 
