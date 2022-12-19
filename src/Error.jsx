@@ -1,7 +1,11 @@
 import React from "react";
 
 const Error = () => {
-  return <div>Error</div>;
+  return (
+    <Wrapper>
+      <img src="./images/error.svg" alt="" />
+    </Wrapper>
+  );
 };
-
+const Wrapper = styled.section``;
 export default Error;
