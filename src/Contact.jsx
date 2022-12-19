@@ -14,6 +14,18 @@ const Contact = () => {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
+      <div className="container">
+        <div className="contact-form">
+          <form action="" className="contact-inputs"></form>
+          <input
+            type="text"
+            name="username"
+            placeholder="username"
+            autoComplete="off"
+            required
+          />
+        </div>
+      </div>
     </Wrapper>
   );
 };
