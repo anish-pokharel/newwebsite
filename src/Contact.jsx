@@ -52,7 +52,6 @@ const Contact = () => {
     </Wrapper>
   );
 };
-hello;
 const Wrapper = styled.section`
   padding: 9rem 0 5rem 0;
   .container {
