@@ -1,7 +1,11 @@
 import React from "react";
 
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <>
+      <Wrapper></Wrapper>
+    </>
+  );
 };
-
+const Wrapper = styled.section``;
 export default Footer;
