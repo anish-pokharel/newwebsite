@@ -6,10 +6,10 @@ import Home from "./Home";
 import Service from "./Service";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
 import Error from "./Error";
+import Footer from "../src/components/Footer";
 
 function App() {
   const theme = {
@@ -50,6 +50,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<Error />} />
           </Routes>
+
           <Footer />
         </BrowserRouter>
       </ThemeProvider>
