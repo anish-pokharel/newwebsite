@@ -8,25 +8,21 @@ const Nav = () => {
       <div className="menuIcon">
         <ul className="navbar-list">
           <li>
-            {" "}
             <NavLink className="navbar-links" to={"/"}>
               Home
             </NavLink>
           </li>
           <li>
-            {" "}
             <NavLink className="navbar-links" to={"/about"}>
               About
             </NavLink>
           </li>
           <li>
-            {" "}
             <NavLink className="navbar-links" to={"/service"}>
               Service
             </NavLink>
           </li>
           <li>
-            {" "}
             <NavLink className="navbar-links" to={"/contact"}>
               contact
             </NavLink>
