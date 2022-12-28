@@ -86,5 +86,15 @@ const Footer = () => {
     </>
   );
 };
-const Wrapper = styled.section``;
+const Wrapper = styled.section`
+  .contact-short {
+    max-width: 60vw;
+    margin: auto;
+    padding: 5rem 10rem;
+    background-color: ${({ theme }) => theme.colors.bg};
+    border-radius: 1rem;
+    box-shadow: ${({ theme }) => theme.colors.shadowSupport};
+    transform: translateY(50%);
+  }
+`;
 export default Footer;
