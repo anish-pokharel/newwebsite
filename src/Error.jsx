@@ -8,7 +8,7 @@ const Error = () => {
     <Wrapper>
       <img src="./images/error.svg" alt="" />
       <NavLink to="/">
-        <Button className="btn">Go Back</Button>
+        <Button className="btn">Error Please</Button>
       </NavLink>
     </Wrapper>
   );
