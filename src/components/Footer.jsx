@@ -104,5 +104,16 @@ const Wrapper = styled.section`
     padding: 14rem 0 9rem 0;
     background-color: ${({ theme }) => theme.colors.footer_bg};
   }
+  h3 {
+    color: ${({ theme }) => theme.colors.hr};
+    margin-bottom: 2.4rem;
+  }
+  p {
+    color: ${({ theme }) => theme.colors.white};
+  }
+  .footer-social--icons {
+    display: flex;
+    gap: 2rem;
+  }
 `;
 export default Footer;
