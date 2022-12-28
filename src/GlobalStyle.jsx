@@ -59,6 +59,9 @@ export const GlobalStyle = createGlobalStyle`
   .grid-three-column {
     grid-template-columns: repeat(3, 1fr);
   }
+  .grid-four-column{
+    grid-template-columns: 1fr 1.2fr .5fr .8fr ;
+ }
   input, textarea{
     max-width: 50rem;
     color: ${({ theme }) => theme.colors.black};
