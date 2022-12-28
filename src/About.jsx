@@ -12,24 +12,6 @@ const About = () => {
   return (
     <>
       <HeroSection />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-        eligendi, velit nesciunt molestiae quas mollitia maxime excepturi
-        pariatur repellendus facere, et officia blanditiis aspernatur, est
-        temporibus? Ea voluptatibus laudantium nobis?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-        eligendi, velit nesciunt molestiae quas mollitia maxime excepturi
-        pariatur repellendus facere, et officia blanditiis aspernatur, est
-        temporibus? Ea voluptatibus laudantium nobis?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-        eligendi, velit nesciunt molestiae quas mollitia maxime excepturi
-        pariatur repellendus facere, et officia blanditiis aspernatur, est
-        temporibus? Ea voluptatibus laudantium nobis?
-      </p>
     </>
   );
 };
