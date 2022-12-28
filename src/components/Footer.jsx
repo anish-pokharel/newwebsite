@@ -96,5 +96,13 @@ const Wrapper = styled.section`
     box-shadow: ${({ theme }) => theme.colors.shadowSupport};
     transform: translateY(50%);
   }
+  .contact-short-btn {
+    justify-self: end;
+    align-self: center;
+  }
+  footer {
+    padding: 14rem 0 9rem 0;
+    background-color: ${({ theme }) => theme.colors.footer_bg};
+  }
 `;
 export default Footer;
