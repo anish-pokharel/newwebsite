@@ -6,10 +6,12 @@ const gotoBtn = () => {
 
 const GoToTop = () => {
   return (
-    <div className="top-btn" onClick={gotoBtn}>
-      GoToTop
-    </div>
+    <Wrapper>
+      <div className="top-btn" onClick={gotoBtn}>
+        GoToTop
+      </div>
+    </Wrapper>
   );
 };
-
+const Wrapper = styled.section``;
 export default GoToTop;
