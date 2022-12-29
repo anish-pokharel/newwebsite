@@ -15,6 +15,12 @@ export const GlobalStyle = createGlobalStyle`
     /* 1rem = 10px */
     overflow-x: hidden;
   }
+  ::-webkit-scrollbar {
+    width: 1.5rem;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: rgb(24 24 29);
+  }
   h1{
     color: ${({ theme }) => theme.colors.heading}
     font-size: 6rem;
