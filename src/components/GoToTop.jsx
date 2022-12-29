@@ -1,7 +1,11 @@
 import React from "react";
 
 const GoToTop = () => {
-  return <div>GoToTop</div>;
+  return (
+    <div className="top-btn" onClick={gotoBtn}>
+      GoToTop
+    </div>
+  );
 };
 
 export default GoToTop;
