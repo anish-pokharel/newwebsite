@@ -32,6 +32,7 @@ const Nav = () => {
     </NavBar>
   );
 };
+// MediaQueryList
 
 const NavBar = styled.nav`
   .navbar-list {
