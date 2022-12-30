@@ -30,8 +30,11 @@ const Nav = () => {
             </NavLink>
           </li>
           <div className="mobile-navbar-btn">
-            <CgMenu />
-            <CgCloseR />
+            <CgMenu name="menu-outline" className="mobile-nav-icon" />
+            <CgCloseR
+              name="close-outline"
+              className="close-outline mobile-nav-icon"
+            />
           </div>
         </ul>
       </div>
@@ -65,6 +68,9 @@ const NavBar = styled.nav`
     }
   }
   .mobile-navbar-btn {
+    display: none;
+  }
+  .mobile-navbar-btn[name="close-outline"] {
     display: none;
   }
 `;
