@@ -10,6 +10,7 @@ import { ThemeProvider } from "styled-components";
 import { GlobalStyle } from "./GlobalStyle";
 import Error from "./Error";
 import Footer from "../src/components/Footer";
+import GoToTop from "./components/GoToTop";
 
 function App() {
   const theme = {
@@ -50,6 +51,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<Error />} />
           </Routes>
+          <GoToTop />
 
           <Footer />
         </BrowserRouter>
