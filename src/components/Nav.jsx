@@ -44,28 +44,28 @@ const Nav = () => {
 // MediaQueryList
 
 const NavBar = styled.nav`
-.navbar-list {
-  display: flex;
-  gap: 4.8rem;
-  
-  li {
-    list-style: none;
-    .navbar-links {
-      $:link,
-      $:visited {
-        display: inline-block;
-        text-decoration: none;
-        font-size: 1.8rem;
-        text-transformation: uppercase;
-        color: ${({ theme }) => theme.colors.black};
-        transition: color 0.3s linear;
-      }
+  .navbar-list {
+    display: flex;
+    gap: 4.8rem;
 
-      &:hover,
-      &active {
-        color: ${({ theme }) => theme.colors.helper};
+    li {
+      list-style: none;
+      .navbar-links {
+        $:link,
+        $:visited {
+          display: inline-block;
+          text-decoration: none;
+          font-size: 1.8rem;
+          text-transformation: uppercase;
+          color: ${({ theme }) => theme.colors.black};
+          transition: color 0.3s linear;
+        }
+
+        &:hover,
+        &active {
+          color: ${({ theme }) => theme.colors.helper};
+        }
       }
-    }
     }
   }
   .mobile-navbar-btn {
@@ -116,18 +116,21 @@ const NavBar = styled.nav`
             color: ${({ theme }) => theme.colors.helper};
           }
         }
+      }
     }
-  }
-  
-  .active .mobile-nav-icon {
-    display: none;
-        font-size: 4.2rem;
-        position: absolute;
-        top: 3%;
-        right: 10%;
-        color: ${({ theme }) => theme.colors.black};
-        z-index: 9999;
-      
+
+    .active .mobile-nav-icon {
+      display: none;
+      font-size: 4.2rem;
+      position: absolute;
+      top: 3%;
+      right: 10%;
+      color: ${({ theme }) => theme.colors.black};
+      z-index: 9999;
+    }
+    .active .close-outline {
+      display: inline-block;
+    }
   }
 `;
 export default Nav;
