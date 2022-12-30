@@ -15,6 +15,10 @@ export const GlobalStyle = createGlobalStyle`
     /* 1rem = 10px */
     overflow-x: hidden;
   }
+  body{
+    
+    overflow-x: hidden;
+  }
   body::-webkit-scrollbar {
     width: 1.5rem;
   }
