@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { CgMenu, CgCloseR } from "react-icons/cg";
 
 const Nav = () => {
+  const [openMenu, setOpenMenu] = useState(false);
   return (
     <NavBar>
       <div className="menuIcon">
@@ -27,6 +29,10 @@ const Nav = () => {
               contact
             </NavLink>
           </li>
+          <div className="mobile-navbar-btn">
+            <CgMenu />
+            <CgCloseR />
+          </div>
         </ul>
       </div>
     </NavBar>
@@ -57,6 +63,9 @@ const NavBar = styled.nav`
         color: ${({ theme }) => theme.colors.helper};
       }
     }
+  }
+  .mobile-navbar-btn {
+    display: none;
   }
 `;
 export default Nav;
