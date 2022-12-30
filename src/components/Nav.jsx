@@ -44,10 +44,10 @@ const Nav = () => {
 // MediaQueryList
 
 const NavBar = styled.nav`
-  .navbar-list {
-    display: flex;
-    gap: 4.8rem;
-  }
+.navbar-list {
+  display: flex;
+  gap: 4.8rem;
+  
   li {
     list-style: none;
     .navbar-links {
@@ -65,6 +65,7 @@ const NavBar = styled.nav`
       &active {
         color: ${({ theme }) => theme.colors.helper};
       }
+    }
     }
   }
   .mobile-navbar-btn {
@@ -102,6 +103,19 @@ const NavBar = styled.nav`
       flex-direction: column;
       text-align: center;
       transform: translateX(100%);
+      // visibility: hidden;
+      // opacity: 0;
+      li {
+        .navbar-link {
+          &:link,
+          &:visited {
+            font-size: 4.2rem;
+          }
+          &:hover,
+          &:active {
+            color: ${({ theme }) => theme.colors.helper};
+          }
+        }
     }
   }
 `;
