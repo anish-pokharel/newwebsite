@@ -118,5 +118,16 @@ const NavBar = styled.nav`
         }
     }
   }
+  
+  .active .mobile-nav-icon {
+    display: none;
+        font-size: 4.2rem;
+        position: absolute;
+        top: 3%;
+        right: 10%;
+        color: ${({ theme }) => theme.colors.black};
+        z-index: 9999;
+      
+  }
 `;
 export default Nav;
