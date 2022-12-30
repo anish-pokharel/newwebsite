@@ -69,9 +69,40 @@ const NavBar = styled.nav`
   }
   .mobile-navbar-btn {
     display: none;
+    .close-outline {
+      display: none;
+    }
   }
   .mobile-navbar-btn[name="close-outline"] {
     display: none;
+  }
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    .mobile-navbar-btn {
+      display: inline-block;
+      z-index: 999;
+      border: ${({ theme }) => theme.colors.black};
+      .mobile-nav-icon {
+        font-size: 4.2rem;
+        color: ${({ theme }) => theme.colors.black};
+      }
+    }
+
+    // hide orginal navbarlist
+
+    .navbar-list {
+      width: 100vw;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      text-align: center;
+      transform: translateX(100%);
+    }
   }
 `;
 export default Nav;
